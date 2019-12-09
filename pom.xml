@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>me.hireny.openest</groupId>
+    <artifactId>openest-parent</artifactId>
+    <packaging>pom</packaging>
+    <version>0.0.1</version>
+    <name>Openest: Openest Parent for Java</name>
+    <description>Openest: 安全框架父模块</description>
+    <modules>
+        <module>openest-core</module>
+        <module>openest-spring</module>
+    </modules>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <openest.version>0.0.1</openest.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>me.hireny.openest</groupId>
+                <artifactId>openest-core</artifactId>
+                <version>${openest.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>me.hireny.openest</groupId>
+                <artifactId>openest-spring</artifactId>
+                <version>${openest.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+
+</project>
